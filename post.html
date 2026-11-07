@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Post an Item | ResourceLoop</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="logo">RL</span><span>ResourceLoop<small>Student Academic Resource Exchange</small></span></a><nav id="mainNav"><a href="index.html">Home</a><a href="browse.html">Browse Items</a><a class="active" href="post.html">Post an Item</a><a href="how-it-works.html">How It Works</a><a href="about.html">About</a></nav></div></header>
+<main class="page-main"><section class="page-banner"><div class="container"><span class="eyebrow">Share with your campus</span><h1>Post an academic item</h1><p>Enter the details below to practise HTML form controls and validation.</p></div></section>
+<section class="section"><div class="container form-layout"><div><h2>Give your resource a new life.</h2><p class="muted">You can list a book, lab coat, drawing tool, calculator or electronics kit.</p><ul class="check-list"><li>✓ Add a clear item name</li><li>✓ Choose a category and condition</li><li>✓ Set a price or offer it for free</li><li>✓ Use sample details for this demonstration</li></ul></div>
+<form class="form-card" action="#form-note" method="get">
+
+<label for="itemName">Item name *</label><input class="field" id="itemName" required maxlength="80" placeholder="e.g. HTML Fundamentals textbook">
+<div class="form-row"><div><label for="itemCategory">Category *</label><select class="field" id="itemCategory" required><option value="">Choose category</option><option>Textbooks</option><option>Lab Coat</option><option>Drawing Tools</option><option>Electronics</option><option>Calculator</option></select></div><div><label for="itemCondition">Condition *</label><select class="field" id="itemCondition" required><option value="">Choose condition</option><option>Like New</option><option>Good</option><option>Used</option></select></div></div>
+<div class="form-row"><div><label for="itemPrice">Price in ₹ (0 = free) *</label><input class="field" id="itemPrice" type="number" min="0" max="100000" required placeholder="0"></div><div><label for="itemSemester">Semester *</label><select class="field" id="itemSemester" required><option value="">Choose semester</option><option>1st Semester</option><option>2nd Semester</option><option>3rd Semester</option><option>4th Semester</option><option>5th Semester</option><option>6th Semester</option><option>7th Semester</option><option>8th Semester</option></select></div></div>
+<label for="sellerName">Student name *</label><input class="field" id="sellerName" required maxlength="60" placeholder="Demo student name">
+<label for="sellerContact">Contact (use demo details) *</label><input class="field" id="sellerContact" required maxlength="100" placeholder="student@example.com">
+<label for="itemDescription">Description</label><textarea class="field" id="itemDescription" rows="3" maxlength="300" placeholder="Write a short description..."></textarea>
+<p class="small muted" id="form-note">This HTML-only demo checks required fields, but does not save or publish submitted listings.</p>
+<button class="button primary full-width" type="submit">Submit Demo Form</button>
+</form></div></section></main>
+<footer><div class="container footer-inner"><div><strong>ResourceLoop</strong><p>Student Academic Resource Exchange System · College project demo</p></div><div class="footer-links"><a href="index.html">Home</a><a href="browse.html">Browse</a><a href="contact.html">Contact</a></div></div></footer>
+</body></html>
